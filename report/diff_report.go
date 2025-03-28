@@ -278,7 +278,7 @@ func (d *DiffReport) FileCoveragesTable(files []*gh.PullRequestFile) string {
 			pc += fc.FileCoverageB.Covered
 			pt += fc.FileCoverageB.Total
 		}
-		rows = append(rows, []string{fmt.Sprintf("[%s](%s)", f.Filename, f.BlobURL), fmt.Sprintf("%.1f%%", floor1(fc.A)), diff})
+		rows = append(rows, []string{fmt.Sprintf("[%s](%s)", f.Filename, f.BlobURL), fmt.Sprintf("%.1f%%", floor1(fc.A)), diff, f.Status})
 	}
 	if !exist {
 		return ""

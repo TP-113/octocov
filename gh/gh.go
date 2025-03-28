@@ -318,6 +318,7 @@ func (g *Gh) FetchPullRequest(ctx context.Context, owner, repo string, number in
 type PullRequestFile struct {
 	Filename string
 	BlobURL  string
+	Status   string
 }
 
 func (g *Gh) FetchPullRequestFiles(ctx context.Context, owner, repo string, number int) ([]*PullRequestFile, error) {
