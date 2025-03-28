@@ -1,5 +1,7 @@
 # Changelog
 
+## [v0.65.1](https://github.com/TP-113/octocov/commits/v0.65.1) - 2025-03-28
+
 ## [v0.65.1](https://github.com/k1LoW/octocov/compare/v0.65.0...v0.65.1) - 2025-03-22
 ### Other Changes
 - ci: pin dependencies using pinact by @k1LoW in https://github.com/k1LoW/octocov/pull/474
