@@ -30,7 +30,7 @@ jobs:
           check-latest: true
 
       - name: Run lint
-        uses: reviewdog/action-golangci-lint@v2 # v2.7.1
+        uses: reviewdog/action-golangci-lint@v2.8.0 # v2.7.1
         with:
           go_version_file: go.mod
           cache: false
