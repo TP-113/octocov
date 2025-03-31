@@ -170,13 +170,13 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            ghcr.io/TP-113/octocov:${{ steps.latest_version.outputs.version }}
-            ghcr.io/TP-113/octocov:latest
+            ghcr.io/${{ github.repository }}:${{ steps.latest_version.outputs.version }}
+            ghcr.io/${{ github.repository }}:latest
           labels: |
             org.opencontainers.image.name=octocov
             org.opencontainers.image.revision=${{ github.sha }}
             org.opencontainers.image.version=${{ steps.latest_version.outputs.version }}
-            org.opencontainers.image.source=https://github.com/TP-113/octocov
+            org.opencontainers.image.source=https://github.com/${{ github.repository }}
 
   release:
     needs: [tagpr, darwin-assets, linux-assets, windows-assets, dockerimage]
