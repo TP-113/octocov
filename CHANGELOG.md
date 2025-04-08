@@ -1,5 +1,7 @@
 # Changelog
 
+## [v0.65.3](https://github.com/TP-113/octocov/compare/v0.65.2...v0.65.3) - 2025-04-08
+
 ## [v0.65.2](https://github.com/TP-113/octocov/compare/v0.65.1...v0.65.2) - 2025-03-28
 
 ## [v0.65.1](https://github.com/TP-113/octocov/commits/v0.65.1) - 2025-03-28
