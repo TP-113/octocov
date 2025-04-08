@@ -306,7 +306,7 @@ func (d *DiffReport) FileCoveragesTable(files []*gh.PullRequestFile) string {
 	}
 
 	table := tablewriter.NewWriter(buf)
-	h := []string{"Files", "Coverage", "+/-"}
+	h := []string{"Files", "Coverage", "+/-", "Status"}
 	table.SetHeader(h)
 	table.SetAutoFormatHeaders(false)
 	table.SetAutoWrapText(false)

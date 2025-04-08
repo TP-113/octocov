@@ -339,6 +339,7 @@ func (g *Gh) FetchPullRequestFiles(ctx context.Context, owner, repo string, numb
 			files = append(files, &PullRequestFile{
 				Filename: f.GetFilename(),
 				BlobURL:  f.GetBlobURL(),
+				Status:   f.GetStatus(),
 			})
 		}
 		page += 1
